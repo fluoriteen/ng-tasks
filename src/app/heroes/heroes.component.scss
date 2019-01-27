@@ -7,13 +7,18 @@
     @extend .badge-dark;
   }
 
-  &:hover {
-    background-color: $indigo;
+  &:hover, &.selected {
+    background-color: lighten($indigo, 20%);
     color: white;
 
     .text-muted {
       @extend .text-light;
     }
+  }
+
+  &.selected {
+    background-color: $indigo;
+
     .badge {
       background-color: $yellow;
       @extend .text-dark;
