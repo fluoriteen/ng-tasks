@@ -1,0 +1,6 @@
+/* Application-wide Styles */
+@import "../styles";
+
+.section {
+  @extend .my-5;
+}

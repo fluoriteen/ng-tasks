@@ -1,0 +1,22 @@
+@import "../../styles";
+@import "../../../node_modules/bootstrap/scss/badge";
+@import "../../../node_modules/bootstrap/scss/card";
+
+.hero-card {
+  .badge {
+    @extend .badge-dark;
+  }
+
+  &:hover {
+    background-color: $indigo;
+    color: white;
+
+    .text-muted {
+      @extend .text-light;
+    }
+    .badge {
+      background-color: $yellow;
+      @extend .text-dark;
+    }
+  }
+}
