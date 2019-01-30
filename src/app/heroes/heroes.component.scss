@@ -10,6 +10,7 @@
   &:hover, &.selected {
     background-color: lighten($indigo, 20%);
     color: white;
+    cursor: pointer;
 
     .text-muted {
       @extend .text-light;
